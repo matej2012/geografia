@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generator</title>
+    <style>
+        .container {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        
+        
+        #output {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        
+        #generate-btn {
+            background-color: #196f75; /* Blue color */
+        color: #fff; /* White text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        #generate-btn:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+    font-size: 150px;
+    text-align: center;
+    color: rgb(27, 53, 27);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img {
+    height: 350px;
+    width: 500px;
+    border: solid 1px darkgrey;
+    position: absolute;
+    top: 370px;
+    right: 80px;
+}
+
+.p1 {
+    font-size: 30px;
+    margin-top: 50px;
+    width: 45%;
+    color: #40514e;
+    margin-left: 100px;
+} 
+
+.div {
+    float: right;
+}
+
+.img2 {
+    height: 400px;
+    width: 600px;
+    border: solid 1px darkgrey;
+    position: absolute;
+    top: 830px;
+    left: 100px;
+}
+
+.p2 {
+    font-size: 30px;
+    margin-top: 50px;
+    width: 45%;
+    color: #40514e;
+    margin-left: 750px;
+    margin-top: 610px;
+}
+
+.img3 {
+   height: 400px;
+   right: 100px;
+   border: solid 1px darkgrey;
+   position: absolute;
+   top: 1300px;
+}
+
+.p3 {
+    font-size: 30px;
+    color: #40514e;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 50px;
+    bottom: 50px;
+}
+
+.img4 {
+    height: 400px;
+    width: 480px;
+    border: solid 5px;
+    border-color: black;
+    margin-top: 100px;
+}
+
+.img5 {
+    height: 400px;
+    width: 480px;
+    border: solid 5px;
+    border-color: black;
+    margin-top: 100px; 
+}
+
+.img6 {
+    height: 400px;
+    width: 480px;
+    border: solid 5px;
+    border-color: black;
+    margin-top: 100px; 
+}
+
+.p4 {
+    font-size: 30px;
+    color: #40514e;
+    position: absolute;
+    margin-left: 200px;
+   margin-top: 200px;
+    text-align: center;
+}
+
+.a1 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 1200px;
+}
+
+.a2 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 1350px; 
+}
+
+.a3 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 1500px;  
+}
+
+.a4 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 1650px;    
+}
+
+.a5 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 1800px;  
+}
+
+.p5 {
+    font-size: 30px;
+    color: #40514e;
+    position: absolute;
+    margin-left: 200px;
+   margin-top: 400px;
+    text-align: center;  
+}
+
+.a6 {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 400px;
+    margin-left: 1100px;  
+}
+
+.p8 {
+    font-size: 20px;
+    color: #40514e; 
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 1200px;
+}
+
+.div1 {
+    display: inline-block;
+}
+
+* {box-sizing: border-box}
+      
+      
+      
+      .images {display: none}
+      
+      .imgArrow {
+      	vertical-align: middle;
+        width:100%;
+      }
+      
+      /* Slideshow container */
+      .carousel-container {
+         max-width: 1000px;
+         position: relative;
+         margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .previous, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         padding: 16px;
+         margin-top: -22px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+      }
+      
+      
+      /* On hover, add a black background color with a little bit seethrough */
+      .prev:hover, .next:hover {
+         background-color: rgba(0,0,0,0.8);
+      }
+      
+      
+      /* The dots/bullets/indicators */
+      .navigation-dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+      }
+      .active, .navigation-dot:hover {
+         background-color: #717171;
+      }
+    </style>
+</head>
+<body>
+    <h1>Dažďové pralesi</h1>
+<div class="div">
+    <img src="https://www.malyprinc.sk/assets/images/clanky/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela.jpg" class="img" alt="strom v dazdovom pralese">
+    <div class="p1">
+        <p>  • Dažďový prales je veľmi bohatý na druhy - obsahuje
+            až vyše 100 druhov stromov na hektár.
+        </p>
+        <p>• Tropické dažďové pralesy pokrývajú v súčasnosti menej ako 3% našej planéty. Aj napriek tomu sú domovom pre viac ako polovicu suchozemských živočíšnych druhov na Zemi.
+           Každý deň dôsledku ničenia týchto lesov mnohé druhy
+               vyhynú.
+        </p>
+    </div>
+    <br>
+    <br>
+    <hr class="featurette-divider">
+</div>
+
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/800px-tropical_wet_forests.png  " class="img2" alt="">
+    <div class="p2"><p>• V dažďových pralesoch majú rieky vždy veľa vody. Tečú tam najvodnatejšie rieky na Zemi  Amazonka a Kongo.
+        Vytvárajú v nej zásoby vody, suroviny dnes ešte nedocenenej hodnoty.</p>
+      <p>• Len Amazonský dažďový prales produkuje okolo 20% všetkého kyslíka, ktorý vzniká na Zemi.
+     </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="featurette-divider">
+</div>
+<div>
+  <img src="https://slidetodoc.com/presentation_image_h/e25c0b444a089a7a4f30fb05d1de750f/image-4.jpg" class="img3" alt="">
+  <div class="p3"><p>• Dažďový prales rastie v poschodiach až do výšky 70 metrov. Je veľmi pestrý a hustý.</p>
+    <p>• Je tam najväčší počet rastlín a živočíchov na Zemi, mnohé z nich človek ešte neobjavil.</p>
+   <p>• Podľa výpočtov vyrúbeme každých šesť sekúnd plochu s veľkosťou futbalového ihriska.</p>
+   <p>• V amazonskom pralese žije 2 a pol milióna druhov hmyzu, 1300 druhov vtákov, 3 000 druhov rýb a 430 druhov cicavcov.</p>
+  </div>
+</div>
+<br>
+<hr class="featurette-divider">
+<br><br>
+<div class="carousel-container">
+    <div class="images fade">
+       <img src="https://img.aktuality.sk/foto/da-ov-prales-ilustra-n-foto/Zml0LWluLzk2MHgwL2ZpbHRlcnM6Zm9ybWF0KGpwZykvaHR0cDovL2xvY2FsaG9zdDo4MS9wdWxzY21zLXRyYW5zZm9ybXMvMQ==/ObqktkpTURBXy8yNmRmMWU0YjZmN2EzYWM0NmQ4NDk0ZjhkNjViOGI3NC5wbmeRlQLNB9AAwsM?st=iCIbaP_FBTOmR49l90MgDfGDn_3nVgP46U5iBiqR7eM&ts=1715637600&e=0" class="imgArrow">
+       </div>
+       <div class="images fade">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3YKHv4ilysgSeor6td5xVm0n6oSMm_698TQJLH3-98vdVwvXfxbshOk2FOgACGcIAF0&usqp=CAU" class="imgArrow">
+       </div>
+       <div class="images fade">
+          <img src="https://dam.nmhmedia.sk/image/e45dfdbd-11b1-41d7-b73d-daa802b63fc8_php7h3wj2.jpg/960/540" class="imgArrow">
+       </div>
+       
+       <!-- Previous and Next Buttons -->
+       <a class="previous" onclick="plusSlides(-1)">❮</a>
+       <a class="next" onclick="plusSlides(1)">❯</a>
+ </div>
+ <br>
+ 
+ <!-- Navigation Dots-->
+ <div style="text-align:center">
+    <span class="navigation-dot" onclick="currentSlide(1)"></span>
+    <span class="navigation-dot" onclick="currentSlide(2)"></span>
+    <span class="navigation-dot" onclick="currentSlide(3)"></span>
+ </div>
+<br><br><br><br><br><br>
+ <div class="container">
+    <div id="output"></div>
+    <button id="generate-btn">Generate Name</button>
+</div>
+ <script>
+    var currentIndex = 1;
+    
+    //Show current image
+    showSlides(currentIndex);
+    
+    //Function to move Next
+    function plusSlides(n) {
+       showSlides(currentIndex += n);
+    }
+    
+    //Function to move back
+   function currentSlide(n) {
+       showSlides(currentIndex = n);
+   }
+    
+    
+    //Initiate moving of slides
+   function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("images");
+       var dots = document.getElementsByClassName("navigation-dot");
+       if (n > slides.length) {currentIndex = 1}
+       if (n < 1) {currentIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[currentIndex-1].style.display = "block";
+       dots[currentIndex-1].className += " active";
+   }
+
+
+    
+        
+        
+        // List of sample names
+        const names = [
+        "Matej A.", "Tomáš H.", "Tomáš V.", "Vivien S.", "Vivien V.", "Tobiáš", "Daniel", "Sára", "Lea", "Ingrid", "Ivana", "Cyril", "Maxim", "Marko", "Timea", "Stano", "Laura", "Simon", "Matúš", "Tamara", "Jakub", "Tereza", "Dominik"
+        ];
+
+        // Function to generate a random name
+        function generateRandomName() {
+            const randomIndex = Math.floor(Math.random() * names.length);
+            return names[randomIndex];
+        }
+
+        // Function to update the output div with a random name
+        function updateOutput() {
+            const output = document.getElementById("output");
+            output.textContent = generateRandomName();
+        }
+
+        // Event listener for the button click to generate a new name
+        document.getElementById("generate-btn").addEventListener("click", updateOutput);
+
+        // Generate a random name initially
+        updateOutput();
+    </script>
+</body>
+</html>
