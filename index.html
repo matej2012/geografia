@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geografia</title>
+    <title>Toggle Button Color</title>
     <style>
+       
+        .color-btn-green {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff; /* Initial color: Blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .color-btn-red {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff; /* Initial color: Blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
         .container {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: center;
@@ -17,7 +40,19 @@
         }
         
         #generate-btn {
-            background-color: #196f75; /* Blue color */
+        background-color: #196f75; /* Blue color */
+        color: #fff; /* White text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .answer-btn {
+        background-color: #2599cf;
         color: #fff; /* White text color */
         border: none;
         border-radius: 5px;
@@ -41,6 +76,11 @@
 
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
 }
 
 .img {
@@ -262,120 +302,146 @@ p{
       .active, .navigation-dot:hover {
          background-color: #717171;
       }
+
+      .firstQuestion {
+        margin-left: 70px;
+      }
     </style>
 </head>
 <body>
     <h1>Dažďové pralesi</h1>
-<div class="div">
-    <img src="https://www.malyprinc.sk/assets/images/clanky/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela.jpg" class="img" alt="strom v dazdovom pralese">
-    <div class="p1">
-        <p>  • Dažďový prales je veľmi bohatý na druhy - obsahuje
-            až vyše 100 druhov stromov na hektár.
-        </p>
-        <p>• Tropické dažďové pralesy pokrývajú v súčasnosti menej ako 3% našej planéty. Aj napriek tomu sú domovom pre viac ako polovicu suchozemských živočíšnych druhov na Zemi.
-           Každý deň dôsledku ničenia týchto lesov mnohé druhy
-               vyhynú.
-        </p>
+    <div class="div">
+        <img src="https://www.malyprinc.sk/assets/images/clanky/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela.jpg" class="img" alt="strom v dazdovom pralese">
+        <div class="p1">
+            <p>• Dažďový prales je veľmi bohatý na druhy - obsahuje až vyše 100 druhov stromov na hektár.</p>
+            <p>• Dažďové pralesy pokrývajú v súčasnosti menej ako 3% našej planéty. Aj napriek tomu sú domovom pre viac ako polovicu suchozemských živočíšnych druhov na Zemi. Každý deň dôsledku ničenia týchto lesov mnohé druhy vyhynú.</p>
+        </div>
+        <br>
+        <br>
+        <hr class="featurette-divider">
     </div>
-    <br>
+
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/800px-tropical_wet_forests.png" class="img2" alt="">
+        <div class="p2">
+            <p>• V dažďových pralesoch majú rieky vždy veľa vody. Tečú tam najvodnatejšie rieky na Zemi Amazonka a Kongo. Vytvárajú v nej zásoby vody, suroviny dnes ešte nedocenenej hodnoty.</p>
+            <p>• Len Amazonský dažďový prales produkuje okolo 20% všetkého kyslíka, ktorý vzniká na Zemi.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr class="featurette-divider">
+    </div>
+
+    <div>
+        <img src="https://slidetodoc.com/presentation_image_h/e25c0b444a089a7a4f30fb05d1de750f/image-4.jpg" class="img3" alt="">
+        <div class="p3">
+            <p>• Dažďový prales rastie v poschodiach až do výšky 70 metrov. Je veľmi pestrý a hustý.</p>
+            <p>• Je tam najväčší počet rastlín a živočíchov na Zemi, mnohé z nich človek ešte neobjavil.</p>
+            <p>• Podľa výpočtov vyrúbeme každých šesť sekúnd plochu s veľkosťou futbalového ihriska.</p>
+            <p>• V amazonskom pralese žije 2 a pol milióna druhov hmyzu, 1300 druhov vtákov, 3 000 druhov rýb a 430 druhov cicavcov.</p>
+        </div>
+    </div>
+
     <br>
     <hr class="featurette-divider">
-</div>
-
-<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/800px-tropical_wet_forests.png  " class="img2" alt="">
-    <div class="p2"><p>• V dažďových pralesoch majú rieky vždy veľa vody. Tečú tam najvodnatejšie rieky na Zemi  Amazonka a Kongo.
-        Vytvárajú v nej zásoby vody, suroviny dnes ešte nedocenenej hodnoty.</p>
-      <p>• Len Amazonský dažďový prales produkuje okolo 20% všetkého kyslíka, ktorý vzniká na Zemi.
-     </p>
+    <br><br>
+    <div class="carousel-container">
+        <div class="images fade">
+            <img src="https://img.aktuality.sk/foto/da-ov-prales-ilustra-n-foto/Zml0LWluLzk2MHgwL2ZpbHRlcnM6Zm9ybWF0KGpwZykvaHR0cDovL2xvY2FsaG9zdDo4MS9wdWxzY21zLXRyYW5zZm9ybXMvMQ==/ObqktkpTURBXy8yNmRmMWU0YjZmN2EzYWM0NmQ4NDk0ZjhkNjViOGI3NC5wbmeRlQLNB9AAwsM?st=iCIbaP_FBTOmR49l90MgDfGDn_3nVgP46U5iBiqR7eM&ts=1715637600&e=0" class="imgArrow">
+        </div>
+        <div class="images fade">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3YKHv4ilysgSeor6td5xVm0n6oSMm_698TQJLH3-98vdVwvXfxbshOk2FOgACGcIAF0&usqp=CAU" class="imgArrow">
+        </div>
+        <div class="images fade">
+            <img src="https://img.aktuality.sk/foto/da-ov-prales-v-guatemale-pr-rodn-pamiatka-semuc-champey/Zml0LWluLzk2MHgwL2ZpbHRlcnM6Zm9ybWF0KGpwZykvaHR0cDovL2xvY2FsaG9zdDo4MS9wdWxzY21zLXRyYW5zZm9ybXMvMQ==/S7pktkpTURBXy84ZWQwNGNlYjRhZDRhYzhhOGIyM2FhN2Q0OTc0ODJkNC5wbmeRlQLNB9AAwsM?st=KW3JklIR3i37XY6QMSoLrB_8J7SQ5z0-6yZNzHS7uBg&ts=1715896800&e=0" class="imgArrow">
+        </div>
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div style="text-align: center;">
+        <span class="navigation-dot" onclick="currentSlide(1)"></span>
+        <span class="navigation-dot" onclick="currentSlide(2)"></span>
+        <span class="navigation-dot" onclick="currentSlide(3)"></span>
+    </div>
     <hr class="featurette-divider">
-</div>
-<div>
-  <img src="https://slidetodoc.com/presentation_image_h/e25c0b444a089a7a4f30fb05d1de750f/image-4.jpg" class="img3" alt="">
-  <div class="p3"><p>• Dažďový prales rastie v poschodiach až do výšky 70 metrov. Je veľmi pestrý a hustý.</p>
-    <p>• Je tam najväčší počet rastlín a živočíchov na Zemi, mnohé z nich človek ešte neobjavil.</p>
-   <p>• Podľa výpočtov vyrúbeme každých šesť sekúnd plochu s veľkosťou futbalového ihriska.</p>
-   <p>• V amazonskom pralese žije 2 a pol milióna druhov hmyzu, 1300 druhov vtákov, 3 000 druhov rýb a 430 druhov cicavcov.</p>
-  </div>
-</div>
-<br>
-<hr class="featurette-divider">
-<br><br>
-<div class="carousel-container">
-    <div class="images fade">
-       <img src="https://img.aktuality.sk/foto/da-ov-prales-ilustra-n-foto/Zml0LWluLzk2MHgwL2ZpbHRlcnM6Zm9ybWF0KGpwZykvaHR0cDovL2xvY2FsaG9zdDo4MS9wdWxzY21zLXRyYW5zZm9ybXMvMQ==/ObqktkpTURBXy8yNmRmMWU0YjZmN2EzYWM0NmQ4NDk0ZjhkNjViOGI3NC5wbmeRlQLNB9AAwsM?st=iCIbaP_FBTOmR49l90MgDfGDn_3nVgP46U5iBiqR7eM&ts=1715637600&e=0" class="imgArrow">
-       </div>
-       <div class="images fade">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3YKHv4ilysgSeor6td5xVm0n6oSMm_698TQJLH3-98vdVwvXfxbshOk2FOgACGcIAF0&usqp=CAU" class="imgArrow">
-       </div>
-       <div class="images fade">
-          <img src="https://dam.nmhmedia.sk/image/e45dfdbd-11b1-41d7-b73d-daa802b63fc8_php7h3wj2.jpg/960/540" class="imgArrow">
-       </div>
-       
-       <!-- Previous and Next Buttons -->
-       <a class="previous" onclick="plusSlides(-1)">❮</a>
-       <a class="next" onclick="plusSlides(1)">❯</a>
- </div>
- <br>
- 
- <!-- Navigation Dots-->
- <div style="text-align:center">
-    <span class="navigation-dot" onclick="currentSlide(1)"></span>
-    <span class="navigation-dot" onclick="currentSlide(2)"></span>
-    <span class="navigation-dot" onclick="currentSlide(3)"></span>
- </div>
-<br><br><br><br><br><br>
- <div class="container">
-    <div id="output"></div>
-    <button id="generate-btn">Generate Name</button>
-</div>
- <script>
-    var currentIndex = 1;
-    
-    //Show current image
-    showSlides(currentIndex);
-    
-    //Function to move Next
-    function plusSlides(n) {
-       showSlides(currentIndex += n);
-    }
-    
-    //Function to move back
-   function currentSlide(n) {
-       showSlides(currentIndex = n);
-   }
-    
-    
-    //Initiate moving of slides
-   function showSlides(n) {
-       var i;
-       var slides = document.getElementsByClassName("images");
-       var dots = document.getElementsByClassName("navigation-dot");
-       if (n > slides.length) {currentIndex = 1}
-       if (n < 1) {currentIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-       }
-       for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-       }
-       slides[currentIndex-1].style.display = "block";
-       dots[currentIndex-1].className += " active";
-   }
-
-
-    
-        
-        
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div id="output"></div>
+        <button id="generate-btn">Generate Name</button>
+    </div>
+    <br><br>
+    <div class="firstQuestion">
+        <h3>Koľko percent kyslíka produkuje Amazonský prales?</h3>
+        <div class="answers">
+            <button class="answer-btn correct">20%</button>
+            <button class="answer-btn">15%</button>
+            <button class="answer-btn">10%</button>
+            <button class="answer-btn">5%</button>
+            <button class="answer-btn">25%</button>
+        </div>
+    </div>
+    <br>
+    <hr class="featurette-divider"> 
+    <div class="firstQuestion">
+        <h3>V akom mesiaci je deň dažďových pralesov?</h3>
+        <div class="answers">
+            <button class="answer-btn">Jún</button>
+            <button class="answer-btn">Január</button>
+            <button class="answer-btn">December</button>
+            <button class="answer-btn correct">Október</button>
+            <button class="answer-btn">Marc</button>
+        </div>
+    </div>
+    <br>
+    <hr class="featurette-divider">                                
+    <div class="firstQuestion">
+        <h3>Aká je maximálna výška stromov v dažďových pralesoch?</h3>
+        <div class="answers">
+            <button class="answer-btn">100m</button>
+            <button class="answer-btn correct">70m</button>
+            <button class="answer-btn">45m</button>
+            <button class="answer-btn">85m</button>
+            <button class="answer-btn">30m</button>
+        </div>
+    </div>
+    <br>
+    <hr class="featurette-divider"> 
+    <div class="firstQuestion">
+        <h3>Za aký časový úsek sa výrube plocha futbalového ihriska?</h3>
+        <div class="answers">
+            <button class="answer-btn">1min. 6sek.</button>
+            <button class="answer-btn">1min.</button>
+            <button class="answer-btn">6min.</button>
+            <button class="answer-btn">66sek.</button>
+            <button class="answer-btn correct">6sek.</button>
+        </div>
+    </div>
+    <br>
+    <hr class="featurette-divider"> 
+    <h3>Zdroje:</h3>
+    <a href="https://sk.wikipedia.org/wiki/Da%C5%BE%C4%8Fov%C3%BD_les">https://sk.wikipedia.org/wiki/Da%C5%BE%C4%8Fov%C3%BD_les</a>
+    <br>
+    <a href="https://refresher.sk/129800-Dazdove-pralesy-tvoria-iba-3-nasej-planety-no-ludi-odpradavna-fascinuju-Precitaj-si-o-nich-10-zaujimavosti">https://refresher.sk/129800-Dazdove-pralesy-tvoria-iba-3-nasej-planety-no-ludi-odpradavna-fascinuju-Precitaj-si-o-nich-10-zaujimavosti</a>
+    <br>
+    <hr class="featurette-divider"> 
+    <h3>Obrázky:</h3>
+    <a href="https://www.malyprinc.sk/assets/images/clanky/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela.jpg">https://www.malyprinc.sk/assets/images/clanky/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela/dazdovy-prales-v-ekvadore-sen-kazdeho-cestovatela.jpg</a>
+    <br>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/d/db/800px-tropical_wet_forests.png">https://upload.wikimedia.org/wikipedia/commons/d/db/800px-tropical_wet_forests.png</a>
+    <br>
+    <a href="https://slidetodoc.com/presentation_image_h/e25c0b444a089a7a4f30fb05d1de750f/image-4.jpg">https://slidetodoc.com/presentation_image_h/e25c0b444a089a7a4f30fb05d1de750f/image-4.jpg</a>
+    <br>
+    <br><br><br>
+    <script>
         // List of sample names
         const names = [
-        "Matej A.", "Tomáš H.", "Tomáš V.", "Vivien S.", "Vivien V.", "Tobiáš", "Daniel", "Sára", "Lea", "Ingrid", "Ivana", "Cyril", "Maxim", "Marko", "Timea", "Stano", "Laura", "Simon", "Matúš", "Tamara", "Jakub", "Tereza", "Dominik"
+            "Matej A.", "Tomáš H.", "Tomáš V.", "Vivien S.", "Vivien V.", "Tobiáš", "Daniel", "Sára", "Lea", "Ingrid",
+            "Ivana", "Cyril", "Maxim", "Marko", "Timea", "Stano", "Laura", "Simon", "Matúš", "Tamara",
+            "Jakub", "Tereza", "Dominik"
         ];
 
         // Function to generate a random name
@@ -395,6 +461,45 @@ p{
 
         // Generate a random name initially
         updateOutput();
+
+        // Add event listeners to answer buttons
+        document.querySelectorAll('.answer-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.classList.contains('correct')) {
+                    this.style.backgroundColor = 'green';
+                } else {
+                    this.style.backgroundColor = 'red';
+                }
+            });
+        });
+
+        // Carousel functionality
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("images");
+            let dots = document.getElementsByClassName("navigation-dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
     </script>
 </body>
 </html>
